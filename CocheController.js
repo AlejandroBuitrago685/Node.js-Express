@@ -21,6 +21,10 @@ app.post("/", (req, res) => {
     
 })
 
+app.get("/", (req, res) => {
+    res.send("Vaya a la ruta /coches para visualizar todos los coches, si quieres añadir un nuevo coche lo puedes hacer mediante postman.");
+});
+
 app.get("/coches", (req, res) => {
     res.status(200).send(Datos);
 });
